@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap');
+
 
 :root {
 
@@ -70,38 +69,36 @@ main p {
 .estrofe_img1{
     background-image: url(../imagens/background001.jpg);
     background-position: right center; 
-    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    box-shadow: insent 5px 5px 10px 0px rgba(0, 0, 0, 0.452);
-    padding-top: 10vh;
+    background-repeat: repeat;
+    padding: 10vh 30px;
+    box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.452);
     padding-bottom: 10vh;
-    padding-left: 30px;
 }
 
 .estrofe_img2 {
     background-image: url(../imagens/background002.jpg);
     background-position: center;
-    background-repeat: no-repeat;
+    box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.445);
     background-size: cover;
     background-attachment: fixed;
-    box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.445);
-    padding-top: 10vh;
+    background-repeat: repeat;
+    padding: 10vh 30px;
     padding-bottom: 10vh;
-    padding-left: 30px;
 
 }
 
 .estrofe_img1 p , .estrofe_img2  p {
     color: var(--cor02);
-    background: rgba(0, 0, 0, 0.377);
+    background: rgba(0, 0, 0, 0.562);
     padding: 10px 5px;
     width: max-content;
     border-radius: 5px; 
     text-shadow: 1px 1px 1px black; 
 }
 
-/*footer8*/
+/*footer*/
 
 footer {
     background-color: var(--cor01);
