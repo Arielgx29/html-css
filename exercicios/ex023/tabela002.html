@@ -12,14 +12,40 @@
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    thead {
+    tbody > tr:nth-child(2n) { /*(even)*/
+
+        background-color: rgb(173, 171, 171);
+    }
+
+    tbody > tr:nth-child(2n-1){ /*(odd)*/
+
+        background-color: rgb(228, 228, 228);
+    }
+    
+
+    thead,tfoot {
       background-color: gray;
       color: white;
+    }
+
+    thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: #383838;
+        
     }
 
     table {
         width: 500px;
         border-collapse: collapse;
+        position: relative;
+    }
+
+    caption {
+        background-color: rgba(158, 148, 148, 0.856);
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 10px;
     }
 
     th,td {
@@ -35,6 +61,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -44,10 +71,11 @@
     -->
 
         <table>
+            <caption>Populaçao das Unidades Federativas</caption>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
                 </tr>
             </thead>
 
@@ -190,11 +218,50 @@
             </tbody>
 
             <tfoot>
-                    <th>Total de Habitantes</th>
+                    <th scope="row">Total de Habitantes</th>
                     <td class="num"><strong>212 583 750</strong></td>
             </tfoot>
         
         </table>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestias cum veritatis nisi libero, autem accusantium quisquam ratione deserunt sapiente cupiditate, adipisci animi, natus nihil blanditiis nulla! Est, explicabo quisquam?</p>
+
     
 </body>
 </html>
