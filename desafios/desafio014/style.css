@@ -1,0 +1,25 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+    table {
+        border-collapse: collapse;
+        width: 550px;   
+    }
+
+    .cinza {
+        background-color: rgb(104, 93, 93);
+        color: white;
+        font-weight: bold;
+    }
+        
+    .media {
+        text-align: start;
+    }
+
+    th,td {
+        border: 2px solid black;
+        padding: 10px;
+        text-align: center;
+    }
